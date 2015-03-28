@@ -14,28 +14,66 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let logInButton = TWTRLogInButton(logInCompletion: {
-            (session: TWTRSession!, error: NSError!) in
-            // play with Twitter session
-        })
-        logInButton.center = self.view.center
-        self.view.addSubview(logInButton)
+        if Twitter.sharedInstance().session() != nil {
+            println("session \(Twitter.sharedInstance().session())")
+        } else {
+            let logInButton = TWTRLogInButton(logInCompletion: {
+                (session: TWTRSession!, error: NSError!) in
+                // play with Twitter session
+                println("signed in as \(session.userName)");
+            })
+            logInButton.center = self.view.center
+            self.view.addSubview(logInButton)
+        }
+        getTwitterFriends()
         
-        let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
-            (session: DGTSession!, error: NSError!) in
-            // play with Digits session
+        var testObject: PFObject = PFObject(className: "testObject")
+        testObject.setObject("world", forKey: "hello")
+        testObject.saveInBackgroundWithBlock({
+            (success: Bool!, error: NSError!) -> Void in
+            if (success != nil) {
+                NSLog("Object created with id: \(testObject.objectId)")
+            } else {
+                NSLog("%@", error)
+            }
         })
-        authenticateButton.center.y = self.view.center.y + CGFloat(80)
-        authenticateButton.center.x = self.view.center.x
-        self.view.addSubview(authenticateButton)
-
-
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getTwitterFriends() {
+        let statusesShowEndpoint = "https://api.twitter.com/1.1/friends/ids.json"
+        let params = ["user_id": Twitter.sharedInstance().session().userID]
+        var clientError : NSError?
+        
+        let request = Twitter.sharedInstance().APIClient.URLRequestWithMethod(
+                "GET", URL: statusesShowEndpoint, parameters: params,
+                error: &clientError)
+        
+        if request != nil {
+            Twitter.sharedInstance().APIClient.sendTwitterRequest(request) {
+                    (response, data, connectionError) -> Void in
+                    if (connectionError == nil) {
+                        var jsonError : NSError?
+                        let json : AnyObject? =
+                        NSJSONSerialization.JSONObjectWithData(data,
+                            options: nil,
+                            error: &jsonError)
+                        println("\(json)")
+                    }
+                    else {
+                        println("Error: \(connectionError)")
+                    }
+            }
+        }
+        else {
+            println("Error: \(clientError)")
+        }
     }
 
 

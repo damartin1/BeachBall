@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Fabric.with([Crashlytics(), Twitter()])
+        
+        Parse.setApplicationId("tA7LTihclORFHUEg4YyPYpn6Zhf1eAb8jLqeepGe",
+            clientKey: "OiiJRdEUMNdn3TM9ccnSwZ0hZKeYbI1X9ZXURMZN")
         return true
     }
 
