@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */; };
+		2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE111AC749C3006A4E3C /* ViewController.swift */; };
+		2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE131AC749C3006A4E3C /* Main.storyboard */; };
+		2851EE171AC749C3006A4E3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE161AC749C3006A4E3C /* Images.xcassets */; };
+		2851EE1A1AC749C3006A4E3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE181AC749C3006A4E3C /* LaunchScreen.xib */; };
+		2851EE261AC749C4006A4E3C /* BeachBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE251AC749C4006A4E3C /* BeachBallTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2851EE201AC749C4006A4E3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2851EE021AC749C3006A4E3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2851EE091AC749C3006A4E3C;
+			remoteInfo = BeachBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2851EE0A1AC749C3006A4E3C /* BeachBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2851EE0E1AC749C3006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2851EE111AC749C3006A4E3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2851EE141AC749C3006A4E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2851EE161AC749C3006A4E3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2851EE191AC749C3006A4E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeachBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2851EE241AC749C4006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2851EE251AC749C4006A4E3C /* BeachBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachBallTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2851EE071AC749C3006A4E3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851EE1C1AC749C4006A4E3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2851EE011AC749C3006A4E3C = {
+			isa = PBXGroup;
+			children = (
+				2851EE0C1AC749C3006A4E3C /* BeachBall */,
+				2851EE221AC749C4006A4E3C /* BeachBallTests */,
+				2851EE0B1AC749C3006A4E3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2851EE0B1AC749C3006A4E3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE0A1AC749C3006A4E3C /* BeachBall.app */,
+				2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2851EE0C1AC749C3006A4E3C /* BeachBall */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */,
+				2851EE111AC749C3006A4E3C /* ViewController.swift */,
+				2851EE131AC749C3006A4E3C /* Main.storyboard */,
+				2851EE161AC749C3006A4E3C /* Images.xcassets */,
+				2851EE181AC749C3006A4E3C /* LaunchScreen.xib */,
+				2851EE0D1AC749C3006A4E3C /* Supporting Files */,
+			);
+			path = BeachBall;
+			sourceTree = "<group>";
+		};
+		2851EE0D1AC749C3006A4E3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE0E1AC749C3006A4E3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2851EE221AC749C4006A4E3C /* BeachBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE251AC749C4006A4E3C /* BeachBallTests.swift */,
+				2851EE231AC749C4006A4E3C /* Supporting Files */,
+			);
+			path = BeachBallTests;
+			sourceTree = "<group>";
+		};
+		2851EE231AC749C4006A4E3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE241AC749C4006A4E3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2851EE091AC749C3006A4E3C /* BeachBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2851EE291AC749C4006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall" */;
+			buildPhases = (
+				2851EE061AC749C3006A4E3C /* Sources */,
+				2851EE071AC749C3006A4E3C /* Frameworks */,
+				2851EE081AC749C3006A4E3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeachBall;
+			productName = BeachBall;
+			productReference = 2851EE0A1AC749C3006A4E3C /* BeachBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2851EE1E1AC749C4006A4E3C /* BeachBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2851EE2C1AC749C4006A4E3C /* Build configuration list for PBXNativeTarget "BeachBallTests" */;
+			buildPhases = (
+				2851EE1B1AC749C4006A4E3C /* Sources */,
+				2851EE1C1AC749C4006A4E3C /* Frameworks */,
+				2851EE1D1AC749C4006A4E3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2851EE211AC749C4006A4E3C /* PBXTargetDependency */,
+			);
+			name = BeachBallTests;
+			productName = BeachBallTests;
+			productReference = 2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2851EE021AC749C3006A4E3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Robert Borkowski";
+				TargetAttributes = {
+					2851EE091AC749C3006A4E3C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2851EE1E1AC749C4006A4E3C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2851EE091AC749C3006A4E3C;
+					};
+				};
+			};
+			buildConfigurationList = 2851EE051AC749C3006A4E3C /* Build configuration list for PBXProject "BeachBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2851EE011AC749C3006A4E3C;
+			productRefGroup = 2851EE0B1AC749C3006A4E3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2851EE091AC749C3006A4E3C /* BeachBall */,
+				2851EE1E1AC749C4006A4E3C /* BeachBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2851EE081AC749C3006A4E3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */,
+				2851EE1A1AC749C3006A4E3C /* LaunchScreen.xib in Resources */,
+				2851EE171AC749C3006A4E3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851EE1D1AC749C4006A4E3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2851EE061AC749C3006A4E3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */,
+				2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851EE1B1AC749C4006A4E3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE261AC749C4006A4E3C /* BeachBallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2851EE211AC749C4006A4E3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2851EE091AC749C3006A4E3C /* BeachBall */;
+			targetProxy = 2851EE201AC749C4006A4E3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2851EE131AC749C3006A4E3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2851EE141AC749C3006A4E3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2851EE181AC749C3006A4E3C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2851EE191AC749C3006A4E3C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2851EE271AC749C4006A4E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2851EE281AC749C4006A4E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2851EE2A1AC749C4006A4E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeachBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2851EE2B1AC749C4006A4E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeachBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2851EE2D1AC749C4006A4E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeachBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeachBall.app/BeachBall";
+			};
+			name = Debug;
+		};
+		2851EE2E1AC749C4006A4E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeachBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeachBall.app/BeachBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2851EE051AC749C3006A4E3C /* Build configuration list for PBXProject "BeachBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2851EE271AC749C4006A4E3C /* Debug */,
+				2851EE281AC749C4006A4E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2851EE291AC749C4006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2851EE2A1AC749C4006A4E3C /* Debug */,
+				2851EE2B1AC749C4006A4E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2851EE2C1AC749C4006A4E3C /* Build configuration list for PBXNativeTarget "BeachBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2851EE2D1AC749C4006A4E3C /* Debug */,
+				2851EE2E1AC749C4006A4E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2851EE021AC749C3006A4E3C /* Project object */;
+}
