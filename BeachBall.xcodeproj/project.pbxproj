@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28054A701AC74BFD00646F7C /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28054A6E1AC74BFD00646F7C /* TwitterKit.framework */; };
+		28054A711AC74BFD00646F7C /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */; };
 		2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */; };
 		2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE111AC749C3006A4E3C /* ViewController.swift */; };
 		2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE131AC749C3006A4E3C /* Main.storyboard */; };
 		2851EE171AC749C3006A4E3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE161AC749C3006A4E3C /* Images.xcassets */; };
 		2851EE1A1AC749C3006A4E3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE181AC749C3006A4E3C /* LaunchScreen.xib */; };
 		2851EE261AC749C4006A4E3C /* BeachBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE251AC749C4006A4E3C /* BeachBallTests.swift */; };
+		2851EE391AC749DB006A4E3C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE381AC749DB006A4E3C /* InterfaceController.swift */; };
+		2851EE3B1AC749DB006A4E3C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE3A1AC749DB006A4E3C /* NotificationController.swift */; };
+		2851EE3D1AC749DB006A4E3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE3C1AC749DB006A4E3C /* Images.xcassets */; };
+		2851EE411AC749DB006A4E3C /* BeachBall WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE401AC749DB006A4E3C /* BeachBall WatchKit App.app */; };
+		2851EE491AC749DB006A4E3C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE471AC749DB006A4E3C /* Interface.storyboard */; };
+		2851EE4B1AC749DB006A4E3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE4A1AC749DB006A4E3C /* Images.xcassets */; };
+		2851EE4E1AC749DB006A4E3C /* BeachBall WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2851EE331AC749DB006A4E3C /* BeachBall WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2851EE591AC74B6F006A4E3C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851EE571AC74B6F006A4E3C /* Crashlytics.framework */; };
+		2851EE5A1AC74B6F006A4E3C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851EE581AC74B6F006A4E3C /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +34,39 @@
 			remoteGlobalIDString = 2851EE091AC749C3006A4E3C;
 			remoteInfo = BeachBall;
 		};
+		2851EE421AC749DB006A4E3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2851EE021AC749C3006A4E3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2851EE3F1AC749DB006A4E3C;
+			remoteInfo = "BeachBall WatchKit App";
+		};
+		2851EE4C1AC749DB006A4E3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2851EE021AC749C3006A4E3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2851EE321AC749DB006A4E3C;
+			remoteInfo = "BeachBall WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2851EE551AC749DB006A4E3C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2851EE4E1AC749DB006A4E3C /* BeachBall WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		28054A6E1AC74BFD00646F7C /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		2851EE0A1AC749C3006A4E3C /* BeachBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2851EE0E1AC749C3006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +77,18 @@
 		2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeachBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2851EE241AC749C4006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2851EE251AC749C4006A4E3C /* BeachBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachBallTests.swift; sourceTree = "<group>"; };
+		2851EE331AC749DB006A4E3C /* BeachBall WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BeachBall WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2851EE361AC749DB006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2851EE371AC749DB006A4E3C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2851EE381AC749DB006A4E3C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2851EE3A1AC749DB006A4E3C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2851EE3C1AC749DB006A4E3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2851EE401AC749DB006A4E3C /* BeachBall WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeachBall WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2851EE461AC749DB006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2851EE481AC749DB006A4E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2851EE4A1AC749DB006A4E3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2851EE571AC74B6F006A4E3C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2851EE581AC74B6F006A4E3C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +96,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2851EE591AC74B6F006A4E3C /* Crashlytics.framework in Frameworks */,
+				2851EE5A1AC74B6F006A4E3C /* Fabric.framework in Frameworks */,
+				28054A701AC74BFD00646F7C /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2851EE1C1AC749C4006A4E3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851EE301AC749DB006A4E3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,9 +122,15 @@
 		2851EE011AC749C3006A4E3C = {
 			isa = PBXGroup;
 			children = (
+				2851EE571AC74B6F006A4E3C /* Crashlytics.framework */,
+				2851EE581AC74B6F006A4E3C /* Fabric.framework */,
 				2851EE0C1AC749C3006A4E3C /* BeachBall */,
 				2851EE221AC749C4006A4E3C /* BeachBallTests */,
+				2851EE341AC749DB006A4E3C /* BeachBall WatchKit Extension */,
+				2851EE441AC749DB006A4E3C /* BeachBall WatchKit App */,
 				2851EE0B1AC749C3006A4E3C /* Products */,
+				28054A6E1AC74BFD00646F7C /* TwitterKit.framework */,
+				28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +139,8 @@
 			children = (
 				2851EE0A1AC749C3006A4E3C /* BeachBall.app */,
 				2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */,
+				2851EE331AC749DB006A4E3C /* BeachBall WatchKit Extension.appex */,
+				2851EE401AC749DB006A4E3C /* BeachBall WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +183,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2851EE341AC749DB006A4E3C /* BeachBall WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE381AC749DB006A4E3C /* InterfaceController.swift */,
+				2851EE3A1AC749DB006A4E3C /* NotificationController.swift */,
+				2851EE3C1AC749DB006A4E3C /* Images.xcassets */,
+				2851EE351AC749DB006A4E3C /* Supporting Files */,
+			);
+			path = "BeachBall WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2851EE351AC749DB006A4E3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE361AC749DB006A4E3C /* Info.plist */,
+				2851EE371AC749DB006A4E3C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2851EE441AC749DB006A4E3C /* BeachBall WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE471AC749DB006A4E3C /* Interface.storyboard */,
+				2851EE4A1AC749DB006A4E3C /* Images.xcassets */,
+				2851EE451AC749DB006A4E3C /* Supporting Files */,
+			);
+			path = "BeachBall WatchKit App";
+			sourceTree = "<group>";
+		};
+		2851EE451AC749DB006A4E3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2851EE461AC749DB006A4E3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +231,13 @@
 				2851EE061AC749C3006A4E3C /* Sources */,
 				2851EE071AC749C3006A4E3C /* Frameworks */,
 				2851EE081AC749C3006A4E3C /* Resources */,
+				2851EE551AC749DB006A4E3C /* Embed App Extensions */,
+				2851EE561AC74B3D006A4E3C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2851EE4D1AC749DB006A4E3C /* PBXTargetDependency */,
 			);
 			name = BeachBall;
 			productName = BeachBall;
@@ -150,6 +262,39 @@
 			productReference = 2851EE1F1AC749C4006A4E3C /* BeachBallTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2851EE321AC749DB006A4E3C /* BeachBall WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2851EE521AC749DB006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall WatchKit Extension" */;
+			buildPhases = (
+				2851EE2F1AC749DB006A4E3C /* Sources */,
+				2851EE301AC749DB006A4E3C /* Frameworks */,
+				2851EE311AC749DB006A4E3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2851EE431AC749DB006A4E3C /* PBXTargetDependency */,
+			);
+			name = "BeachBall WatchKit Extension";
+			productName = "BeachBall WatchKit Extension";
+			productReference = 2851EE331AC749DB006A4E3C /* BeachBall WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2851EE3F1AC749DB006A4E3C /* BeachBall WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2851EE4F1AC749DB006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall WatchKit App" */;
+			buildPhases = (
+				2851EE3E1AC749DB006A4E3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BeachBall WatchKit App";
+			productName = "BeachBall WatchKit App";
+			productReference = 2851EE401AC749DB006A4E3C /* BeachBall WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +310,12 @@
 					2851EE1E1AC749C4006A4E3C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 2851EE091AC749C3006A4E3C;
+					};
+					2851EE321AC749DB006A4E3C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2851EE3F1AC749DB006A4E3C = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +334,8 @@
 			targets = (
 				2851EE091AC749C3006A4E3C /* BeachBall */,
 				2851EE1E1AC749C4006A4E3C /* BeachBallTests */,
+				2851EE321AC749DB006A4E3C /* BeachBall WatchKit Extension */,
+				2851EE3F1AC749DB006A4E3C /* BeachBall WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28054A711AC74BFD00646F7C /* TwitterKitResources.bundle in Resources */,
 				2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */,
 				2851EE1A1AC749C3006A4E3C /* LaunchScreen.xib in Resources */,
 				2851EE171AC749C3006A4E3C /* Images.xcassets in Resources */,
@@ -205,7 +359,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2851EE311AC749DB006A4E3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE3D1AC749DB006A4E3C /* Images.xcassets in Resources */,
+				2851EE411AC749DB006A4E3C /* BeachBall WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851EE3E1AC749DB006A4E3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE491AC749DB006A4E3C /* Interface.storyboard in Resources */,
+				2851EE4B1AC749DB006A4E3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2851EE561AC74B3D006A4E3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 998f321f5e312c6262e440aa7e433769ff98724e f6c51c2b6ae7c45321ff76aa57e7b173bf8b2ee167255aaef004eafef75e8893";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2851EE061AC749C3006A4E3C /* Sources */ = {
@@ -225,6 +413,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2851EE2F1AC749DB006A4E3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851EE3B1AC749DB006A4E3C /* NotificationController.swift in Sources */,
+				2851EE391AC749DB006A4E3C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +429,16 @@
 			isa = PBXTargetDependency;
 			target = 2851EE091AC749C3006A4E3C /* BeachBall */;
 			targetProxy = 2851EE201AC749C4006A4E3C /* PBXContainerItemProxy */;
+		};
+		2851EE431AC749DB006A4E3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2851EE3F1AC749DB006A4E3C /* BeachBall WatchKit App */;
+			targetProxy = 2851EE421AC749DB006A4E3C /* PBXContainerItemProxy */;
+		};
+		2851EE4D1AC749DB006A4E3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2851EE321AC749DB006A4E3C /* BeachBall WatchKit Extension */;
+			targetProxy = 2851EE4C1AC749DB006A4E3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +457,14 @@
 				2851EE191AC749C3006A4E3C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2851EE471AC749DB006A4E3C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2851EE481AC749DB006A4E3C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +551,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BeachBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +566,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BeachBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +611,60 @@
 			};
 			name = Release;
 		};
+		2851EE501AC749DB006A4E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BeachBall_WatchKit_Extension;
+				INFOPLIST_FILE = "BeachBall WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2851EE511AC749DB006A4E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BeachBall_WatchKit_Extension;
+				INFOPLIST_FILE = "BeachBall WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		2851EE531AC749DB006A4E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeachBall WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2851EE541AC749DB006A4E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BeachBall WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +684,7 @@
 				2851EE2B1AC749C4006A4E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2851EE2C1AC749C4006A4E3C /* Build configuration list for PBXNativeTarget "BeachBallTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +693,25 @@
 				2851EE2E1AC749C4006A4E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2851EE4F1AC749DB006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2851EE501AC749DB006A4E3C /* Debug */,
+				2851EE511AC749DB006A4E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2851EE521AC749DB006A4E3C /* Build configuration list for PBXNativeTarget "BeachBall WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2851EE531AC749DB006A4E3C /* Debug */,
+				2851EE541AC749DB006A4E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
