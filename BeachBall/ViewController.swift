@@ -25,20 +25,25 @@ class ViewController: UIViewController {
                 (session: TWTRSession!, error: NSError!) in
                 // play with Twitter session
                 println("signed in as \(session.userName)")
-
+                
                 if self.checkIfExistingUser(Twitter.sharedInstance().session().userID) == false {
                     var userObject: PFObject = PFObject(className: "User")
                     userObject.setObject(session.userID, forKey: "userID")
                     userObject.setObject(session.userName, forKey: "userName")
-                    userObject.saveInBackgroundWithBlock({
-                        (success: Bool!, error: NSError!) -> Void in
-                        if (success != nil) {
-                            NSLog("Object created with id: \(userObject.objectId)")
-                            self.setUserDetailsForParseID(userObject.objectId)
-                            let buddies = BeachBallBuddies()
-                        } else {
-                            NSLog("%@", error)
-                        }
+                    self.getTwitterUserDetails({
+                        details in
+                        userObject.setObject(details["avatarURL"], forKey: "avatarURL")
+                        userObject.setObject(details["description"], forKey: "description")
+                        userObject.setObject(details["fullName"], forKey: "fullName")
+                        userObject.saveInBackgroundWithBlock({
+                            (success: Bool!, error: NSError!) -> Void in
+                            if (success != nil) {
+                                NSLog("Object created with id: \(userObject.objectId)")
+                                let buddies = BeachBallBuddies()
+                            } else {
+                                NSLog("%@", error)
+                            }
+                        })
                     })
                 } else {
                     let buddies = BeachBallBuddies()
@@ -52,7 +57,7 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -76,7 +81,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func setUserDetailsForParseID(id: String) {
+    func getTwitterUserDetails(completionHandler: (details: Dictionary<String, String>) -> ()) {
         let statusesShowEndpoint = "https://api.twitter.com/1.1/users/lookup.json"
         let params = ["user_id": Twitter.sharedInstance().session().userID]
         var clientError : NSError?
@@ -94,25 +99,14 @@ class ViewController: UIViewController {
                     
                     let avatarURL: String = json[0]["profile_image_url"].stringValue
                     let description: String = json[0]["description"].stringValue
+                    let fullName: String = json[0]["name"].stringValue
                     
-                    var query = PFQuery(className:"User")
-                    query.getObjectInBackgroundWithId(id) {
-                        (user: PFObject!, error: NSError!) -> Void in
-                        if error != nil {
-                            println(error)
-                        } else {
-                            user["avatarURL"] = avatarURL
-                            user["description"] = description
-                            user.saveInBackgroundWithBlock({
-                                (success: Bool!, error: NSError!) -> Void in
-                                if (success != nil) {
-                                    NSLog("Object updated with id: \(id)")
-                                } else {
-                                    NSLog("%@", error)
-                                }
-                            })
-                        }
-                    }
+                    completionHandler(details: [
+                        "avatarURL":avatarURL,
+                        "description":description,
+                        "fullName": fullName
+                        ]
+                    )
                 }
                 else {
                     println("Error: \(connectionError)")
