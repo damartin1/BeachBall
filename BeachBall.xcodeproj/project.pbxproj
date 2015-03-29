@@ -37,6 +37,8 @@
 		2851EE4E1AC749DB006A4E3C /* BeachBall WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2851EE331AC749DB006A4E3C /* BeachBall WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2851EE591AC74B6F006A4E3C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851EE571AC74B6F006A4E3C /* Crashlytics.framework */; };
 		2851EE5A1AC74B6F006A4E3C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851EE581AC74B6F006A4E3C /* Fabric.framework */; };
+		28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */; };
+		28BB42E61AC77B2000B25A7B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BB42E51AC77B2000B25A7B /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		2851EE4A1AC749DB006A4E3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2851EE571AC74B6F006A4E3C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2851EE581AC74B6F006A4E3C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachBallBuddies.swift; sourceTree = "<group>"; };
+		28BB42E51AC77B2000B25A7B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				282054151AC762EE0058CFC4 /* CFNetwork.framework in Frameworks */,
 				282054161AC762EE0058CFC4 /* CoreGraphics.framework in Frameworks */,
 				282054171AC762EE0058CFC4 /* CoreLocation.framework in Frameworks */,
+				28BB42E61AC77B2000B25A7B /* SwiftyJSON.framework in Frameworks */,
 				282054181AC762EE0058CFC4 /* libsqlite3.dylib in Frameworks */,
 				282054191AC762EE0058CFC4 /* libz.dylib in Frameworks */,
 				2820541A1AC762EE0058CFC4 /* MobileCoreServices.framework in Frameworks */,
@@ -162,6 +167,7 @@
 		2820541F1AC7630A0058CFC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28BB42E51AC77B2000B25A7B /* SwiftyJSON.framework */,
 				282054231AC765AF0058CFC4 /* Bolts.framework */,
 				282054091AC762EE0058CFC4 /* AudioToolbox.framework */,
 				2820540A1AC762EE0058CFC4 /* CFNetwork.framework */,
@@ -212,6 +218,7 @@
 			children = (
 				2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */,
 				2851EE111AC749C3006A4E3C /* ViewController.swift */,
+				28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */,
 				2851EE131AC749C3006A4E3C /* Main.storyboard */,
 				2851EE161AC749C3006A4E3C /* Images.xcassets */,
 				2851EE181AC749C3006A4E3C /* LaunchScreen.xib */,
@@ -295,6 +302,7 @@
 				2851EE081AC749C3006A4E3C /* Resources */,
 				2851EE551AC749DB006A4E3C /* Embed App Extensions */,
 				2851EE561AC74B3D006A4E3C /* ShellScript */,
+				28BB42E41AC77A1200B25A7B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -456,6 +464,20 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 998f321f5e312c6262e440aa7e433769ff98724e f6c51c2b6ae7c45321ff76aa57e7b173bf8b2ee167255aaef004eafef75e8893";
 		};
+		28BB42E41AC77A1200B25A7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -464,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */,
+				28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */,
 				2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,14 +638,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)",
+					Frameworks/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = BeachBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BeachBall-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -633,14 +662,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)",
+					Frameworks/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = BeachBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BeachBall-Bridging-Header.h";
 			};
 			name = Release;
