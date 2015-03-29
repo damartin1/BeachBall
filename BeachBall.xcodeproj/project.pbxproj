@@ -22,6 +22,7 @@
 		2820541D1AC762EE0058CFC4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054121AC762EE0058CFC4 /* StoreKit.framework */; };
 		2820541E1AC762EE0058CFC4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054131AC762EE0058CFC4 /* SystemConfiguration.framework */; };
 		282054241AC765AF0058CFC4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054231AC765AF0058CFC4 /* Bolts.framework */; };
+		284043671AC88735001411B0 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284043661AC88735001411B0 /* LeaderboardTableViewController.swift */; };
 		2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */; };
 		2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE111AC749C3006A4E3C /* ViewController.swift */; };
 		2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE131AC749C3006A4E3C /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		282054131AC762EE0058CFC4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		282054201AC763400058CFC4 /* BeachBall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeachBall-Bridging-Header.h"; sourceTree = "<group>"; };
 		282054231AC765AF0058CFC4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		284043661AC88735001411B0 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		2851EE0A1AC749C3006A4E3C /* BeachBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2851EE0E1AC749C3006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				2851EE111AC749C3006A4E3C /* ViewController.swift */,
 				28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */,
 				2851EE131AC749C3006A4E3C /* Main.storyboard */,
+				284043661AC88735001411B0 /* LeaderboardTableViewController.swift */,
 				2851EE161AC749C3006A4E3C /* Images.xcassets */,
 				2851EE181AC749C3006A4E3C /* LaunchScreen.xib */,
 				2851EE0D1AC749C3006A4E3C /* Supporting Files */,
@@ -488,6 +491,7 @@
 				2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */,
 				28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */,
 				2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */,
+				284043671AC88735001411B0 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
