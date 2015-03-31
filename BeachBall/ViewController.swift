@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Twitter.sharedInstance().logOut()
+        //Twitter.sharedInstance().logOut()
         
         if Twitter.sharedInstance().session() != nil {
             println("session \(Twitter.sharedInstance().session())")
@@ -117,6 +117,5 @@ class ViewController: UIViewController {
             println("Error: \(clientError)")
         }
     }
-    
 }
 

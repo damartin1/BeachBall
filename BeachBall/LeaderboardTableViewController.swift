@@ -7,8 +7,38 @@
 //
 
 import UIKit
+import TwitterKit
+import SwiftyJSON
+
+let nc = NSNotificationCenter.defaultCenter()
+let kNotifyUserDataReady = "com.beachball.twtrUserDataReady"
 
 class LeaderboardTableViewController: UITableViewController {
+    
+    let buddieID: Array<String> = [
+        "513376667",
+        "121118692",
+        "37291805",
+        "22330739",
+        "20444825",
+        "2742628802",
+        "608724203",
+        "32385638",
+        "74759560",
+        "83888782",
+        "105596427",
+        "17518588",
+        "46834274",
+        "40918816",
+        "15862891",
+        "125163655",
+        "10121422",
+        "14353392",
+        "7718362"
+
+    ]
+    
+    var twtrUserInfo: Array<TWTRUsers> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +48,14 @@ class LeaderboardTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        nc.addObserver(self,
+            selector: Selector("reloadTVC:"),
+            name: kNotifyUserDataReady,
+            object: nil
+        )
+        
+        self.getAllBuddieData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,60 +68,62 @@ class LeaderboardTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return buddieID.count
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("buddieCell", forIndexPath: indexPath) as LeaderboardTableViewCell
+        if twtrUserInfo.isEmpty == false {
+            let user = twtrUserInfo[indexPath.row]
+            cell.avatarImageView.image = UIImage(data: user.avatarImageData)
+            cell.fullName.text = user.fullName
+            cell.userName.text = user.userName
+            cell.descriptionText.text = user.descriptionText
+        }
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    
+    func reloadTVC(notification: NSNotification) {
+        self.tableView.reloadData()
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func getAllBuddieData() {
+        let statusesShowEndpoint = "https://api.twitter.com/1.1/users/lookup.json"
+        let params = ["user_id": ",".join(self.buddieID)]
+        println("\(params)")
+        var clientError : NSError?
+        
+        let request = Twitter.sharedInstance().APIClient.URLRequestWithMethod(
+            "GET", URL: statusesShowEndpoint, parameters: params,
+            error: &clientError)
+        
+        if request != nil {
+            Twitter.sharedInstance().APIClient.sendTwitterRequest(request) {
+                (response, data, connectionError) -> Void in
+                if (connectionError == nil) {
+                    var jsonError : NSError?
+                    let json = JSON(data: data)
+                    for (index: String, subJson: JSON) in json {
+                        self.twtrUserInfo.append(TWTRUsers(json: subJson))
+                    }
+                    
+                }
+                else {
+                    println("Error: \(connectionError)")
+                }
+            }
+        }
+        else {
+            println("Error: \(clientError)")
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+    
     /*
     // MARK: - Navigation
 
