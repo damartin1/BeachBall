@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28054A701AC74BFD00646F7C /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28054A6E1AC74BFD00646F7C /* TwitterKit.framework */; };
 		28054A711AC74BFD00646F7C /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */; };
+		280EC9E81ACA51A900178A3A /* TWTRUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280EC9E71ACA51A900178A3A /* TWTRUsers.swift */; };
 		282054081AC762910058CFC4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054071AC762910058CFC4 /* Parse.framework */; };
 		282054141AC762EE0058CFC4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054091AC762EE0058CFC4 /* AudioToolbox.framework */; };
 		282054151AC762EE0058CFC4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2820540A1AC762EE0058CFC4 /* CFNetwork.framework */; };
@@ -22,6 +23,7 @@
 		2820541D1AC762EE0058CFC4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054121AC762EE0058CFC4 /* StoreKit.framework */; };
 		2820541E1AC762EE0058CFC4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054131AC762EE0058CFC4 /* SystemConfiguration.framework */; };
 		282054241AC765AF0058CFC4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054231AC765AF0058CFC4 /* Bolts.framework */; };
+		284043671AC88735001411B0 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284043661AC88735001411B0 /* LeaderboardTableViewController.swift */; };
 		2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */; };
 		2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851EE111AC749C3006A4E3C /* ViewController.swift */; };
 		2851EE151AC749C3006A4E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2851EE131AC749C3006A4E3C /* Main.storyboard */; };
@@ -39,6 +41,7 @@
 		2851EE5A1AC74B6F006A4E3C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851EE581AC74B6F006A4E3C /* Fabric.framework */; };
 		28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */; };
 		28BB42E61AC77B2000B25A7B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BB42E51AC77B2000B25A7B /* SwiftyJSON.framework */; };
+		28C4A8831AC887F300BA5CB7 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4A8821AC887F300BA5CB7 /* LeaderboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,7 @@
 /* Begin PBXFileReference section */
 		28054A6E1AC74BFD00646F7C /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		280EC9E71ACA51A900178A3A /* TWTRUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTRUsers.swift; sourceTree = "<group>"; };
 		282054071AC762910058CFC4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		282054091AC762EE0058CFC4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2820540A1AC762EE0058CFC4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -96,6 +100,7 @@
 		282054131AC762EE0058CFC4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		282054201AC763400058CFC4 /* BeachBall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeachBall-Bridging-Header.h"; sourceTree = "<group>"; };
 		282054231AC765AF0058CFC4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		284043661AC88735001411B0 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		2851EE0A1AC749C3006A4E3C /* BeachBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2851EE0E1AC749C3006A4E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		2851EE581AC74B6F006A4E3C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachBallBuddies.swift; sourceTree = "<group>"; };
 		28BB42E51AC77B2000B25A7B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		28C4A8821AC887F300BA5CB7 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,9 @@
 				2851EE111AC749C3006A4E3C /* ViewController.swift */,
 				28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */,
 				2851EE131AC749C3006A4E3C /* Main.storyboard */,
+				28C4A8821AC887F300BA5CB7 /* LeaderboardTableViewCell.swift */,
+				284043661AC88735001411B0 /* LeaderboardTableViewController.swift */,
+				280EC9E71ACA51A900178A3A /* TWTRUsers.swift */,
 				2851EE161AC749C3006A4E3C /* Images.xcassets */,
 				2851EE181AC749C3006A4E3C /* LaunchScreen.xib */,
 				2851EE0D1AC749C3006A4E3C /* Supporting Files */,
@@ -486,8 +495,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2851EE121AC749C3006A4E3C /* ViewController.swift in Sources */,
+				28C4A8831AC887F300BA5CB7 /* LeaderboardTableViewCell.swift in Sources */,
 				28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */,
+				280EC9E81ACA51A900178A3A /* TWTRUsers.swift in Sources */,
 				2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */,
+				284043671AC88735001411B0 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
