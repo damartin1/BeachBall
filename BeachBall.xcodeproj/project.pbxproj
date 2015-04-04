@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		28054A701AC74BFD00646F7C /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28054A6E1AC74BFD00646F7C /* TwitterKit.framework */; };
 		28054A711AC74BFD00646F7C /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */; };
+		280DFA401ACBAAFB002CF82E /* BeachBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DFA3F1ACBAAFB002CF82E /* BeachBall.swift */; };
+		280DFA421ACBB579002CF82E /* BeachBallEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DFA411ACBB579002CF82E /* BeachBallEvent.swift */; };
 		280EC9E81ACA51A900178A3A /* TWTRUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280EC9E71ACA51A900178A3A /* TWTRUsers.swift */; };
 		282054081AC762910058CFC4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054071AC762910058CFC4 /* Parse.framework */; };
 		282054141AC762EE0058CFC4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282054091AC762EE0058CFC4 /* AudioToolbox.framework */; };
@@ -85,6 +87,8 @@
 /* Begin PBXFileReference section */
 		28054A6E1AC74BFD00646F7C /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28054A6F1AC74BFD00646F7C /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		280DFA3F1ACBAAFB002CF82E /* BeachBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachBall.swift; sourceTree = "<group>"; };
+		280DFA411ACBB579002CF82E /* BeachBallEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachBallEvent.swift; sourceTree = "<group>"; };
 		280EC9E71ACA51A900178A3A /* TWTRUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTRUsers.swift; sourceTree = "<group>"; };
 		282054071AC762910058CFC4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		282054091AC762EE0058CFC4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -224,6 +228,8 @@
 			children = (
 				2851EE0F1AC749C3006A4E3C /* AppDelegate.swift */,
 				2851EE111AC749C3006A4E3C /* ViewController.swift */,
+				280DFA3F1ACBAAFB002CF82E /* BeachBall.swift */,
+				280DFA411ACBB579002CF82E /* BeachBallEvent.swift */,
 				28A10D241AC86FAA001FDDC1 /* BeachBallBuddies.swift */,
 				2851EE131AC749C3006A4E3C /* Main.storyboard */,
 				28C4A8821AC887F300BA5CB7 /* LeaderboardTableViewCell.swift */,
@@ -498,8 +504,10 @@
 				28C4A8831AC887F300BA5CB7 /* LeaderboardTableViewCell.swift in Sources */,
 				28A10D251AC86FAA001FDDC1 /* BeachBallBuddies.swift in Sources */,
 				280EC9E81ACA51A900178A3A /* TWTRUsers.swift in Sources */,
+				280DFA401ACBAAFB002CF82E /* BeachBall.swift in Sources */,
 				2851EE101AC749C3006A4E3C /* AppDelegate.swift in Sources */,
 				284043671AC88735001411B0 /* LeaderboardTableViewController.swift in Sources */,
+				280DFA421ACBB579002CF82E /* BeachBallEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
